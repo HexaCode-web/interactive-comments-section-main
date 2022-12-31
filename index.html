@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive comments section</title>
+    <!-- Feel free to remove these styles or customize in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="data.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <template id="comment">
+      <div class="comment-container">
+        <div class="likes"></div>
+        <div class="content">
+          <div class="info">
+            <div class="profilePic"></div>
+            <p class="user bold"></p>
+            <p class="date grey"></p>
+            <div class="reply">
+              <img src="images/icon-reply.svg" />
+              <span class="bold">Reply</span>
+            </div>
+          </div>
+          <div class="comment grey">
+            <p></p>
+          </div>
+        </div>
+        <div class="repliesContainer"></div>
+        <div class="ReplySection inactive">
+          <div class="CurrentUser">
+            <img src="images/avatars/image-juliusomo.png" />
+          </div>
+          <textarea class="replyArea"></textarea>
+          <div class="ReplyButton">
+            <button>Reply</button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template id="reply">
+      <div class="reply-wrapper">
+        <div class="likes"></div>
+        <div class="contentReply">
+          <div class="info">
+            <div class="profilePic"></div>
+            <p class="user bold"></p>
+            <p class="date grey"></p>
+            <div class="buttons">
+              <div class="delete">delete</div>
+              <div class="edit">edit</div>
+              <div class="doneEdit inactive">finish Editing</div>
+            </div>
+          </div>
+          <div class="comment grey">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </template>
+    <div class="main"></div>
+    <div class="addComment">
+      <div class="CurrentUser">
+        <img class="userPicture" />
+        <span class="username bold"></span>
+      </div>
+      <div class="add-comment-text-container">
+        <textarea class="replyArea"></textarea>
+        <button class="ReplyButton">Add comment</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>-->
