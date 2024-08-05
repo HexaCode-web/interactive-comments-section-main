@@ -12,6 +12,11 @@ body {
   font-weight: bolder;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .grey {
   opacity: 0.7;
 }
@@ -20,7 +25,7 @@ body {
   border-radius: 15px;
   padding: 10px;
   margin: 20px;
-  width: 900px;
+  max-width: 900px;
   display: grid;
   gap: 30px;
   grid-template-areas:
@@ -54,8 +59,7 @@ body {
 }
 .comment,
 .editing {
-  min-width: 761.766px;
-  max-width: 761.766px;
+  max-width: 100%;
 }
 .editing {
   padding: 5px;
@@ -96,7 +100,7 @@ body {
 .ReplySection,
 .addComment {
   grid-area: reply;
-  width: 700px;
+  /* width: 700px; */
   display: flex;
   gap: 10px;
   transition: 0.5s all;
@@ -104,7 +108,7 @@ body {
 .addComment {
   display: flex;
   flex-direction: column;
-  width: 700px;
+  /* width: 700px; */
 }
 .CurrentUser {
   display: flex;
